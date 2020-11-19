@@ -8,8 +8,8 @@
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
        
         <div>
-            <app-studentdetails *ngIf="currentUser.role == 'Student' || currentUser.role == !'Teacher' "></app-studentdetails>
-            <app-details-teacher *ngIf="currentUser.role == !'Student' || currentUser.role == 'Teacher' " ></app-details-teacher>
+            <app-studentdetails *ngIf="currentUser.role == 'Student'  "></app-studentdetails>
+            <app-details-teacher *ngIf="currentUser.role == 'Teacher' " ></app-details-teacher>
         </div>
     </div>
 </div>

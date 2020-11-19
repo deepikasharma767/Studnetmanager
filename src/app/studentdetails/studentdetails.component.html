@@ -1,8 +1,13 @@
-<ngb-tabset >
-  
-    <ngb-tab title="Summary">
-      <ng-template ngbTabContent>
-        <div id="Summery" class="tab-pane fade in active">
+
+    <span class="text-left">
+        <img src="https://lh5.googleusercontent.com/proxy/EkYugv9KzLUfAIpv-P4g6b0_mKxhcsfTvNmVueDn6XDHQp_SA0_hG2YFVAwB0Lbj_S-LrT-OtYsvxXMCrkZZMCmBfwelTQaAZW6GZwMQ8bRLwEvZonc0k0NxUpkhLBDuApx25K735rZfyHCIqA1RVpSdU84HF7U-j3xAwt3XLevAJtr5pwaVnRUC=w120-h120" class="img-responsive img-thumbnail">
+        
+    </span>
+
+
+<mat-tab-group>
+<mat-tab label="Summary">
+        
 
             <div class="table-responsive panel">
                 <table class="table">
@@ -32,19 +37,18 @@
                                                                                                      <tr>
                                 <td class="text-success"><i class="fa fa-university"></i> School</td>
                                 <td>
-                                Shyama Mall Girls Inter College                                                                 </td>
+                                Shyama Mall Girls Inter College   </td>
                             </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
-      </ng-template>
-    </ngb-tab>
+        
+    </mat-tab>
      
-    <ngb-tab>
-      <ng-template ngbTabTitle>Address</ng-template>
-      <ng-template ngbTabContent>
-        <div id="Address" class="tab-pane fade">
+    <!-- <mat-tab label="Address">
+      
+      
+       
             <div class="table-responsive panel">
                 <table class="table">
                     <tbody>
@@ -63,20 +67,28 @@ Gorakhpur, Utter Pradesh, India<br>
                             </tbody>
                 </table>
             </div>
-        </div>
+       
       
       
-      </ng-template>
-    </ngb-tab>
      
-    <ngb-tab>
-      <ng-template ngbTabTitle>Contact</ng-template>
-      <ng-template ngbTabContent>
-        <div id="Contact" class="tab-pane fade">
+    </mat-tab> -->
+     
+    <mat-tab label="Contact Info">
+       
             <div class="table-responsive panel">
                 <table class="table">
                     <tbody>
-            
+                        <tr>
+                            <td class="text-success"><i class="fa fa-home"></i> Address</td>
+                            <td>
+                                <address>
+                                    <strong>
+C-***, Amahiya </strong><br>
+Kharobar, ****** <br>
+Gorakhpur, Utter Pradesh, India<br>
+                                </address>
+                            </td>
+                        </tr>
                             <tr>
                                 <td class="text-success"><i class="fa fa-envelope-o"></i> Email ID</td>
                                 <td><a href="mailto:****@pawanmall.net?subject=Email from &amp;body=Hello, Viddhyut Mall">****@pawanmall.net</a></td>
@@ -117,13 +129,12 @@ Gorakhpur, Utter Pradesh, India<br>
                     </tbody>
                 </table>
             </div>
-        </div>
-      </ng-template>
-    </ngb-tab>
+        
      
-    <ngb-tab title="Genral" >
-      <ng-template ngbTabContent>
-        <div id="General" class="tab-pane fade">
+    </mat-tab>
+     
+    <mat-tab label="Genral">
+     
             <div class="table-responsive panel">
                 <table class="table">
                     <tbody>
@@ -159,9 +170,11 @@ Gorakhpur, Utter Pradesh, India<br>
                     </tbody>
                 </table>
             </div>
-        </div>
-      </ng-template>
-    </ngb-tab>
+       
+    </mat-tab>
      
-  </ngb-tabset>
+
+</mat-tab-group>
+
+ 
 
