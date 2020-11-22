@@ -7,7 +7,7 @@ import { AbstractControl, ValidatorFn } from '@angular/forms';
 export class ConfigService {
 	apiURL:string;
 	constructor() {
-		this.apiURL = "http://localhost/saNG4-Demo-App/api/";
+		this.apiURL = " ";
 	}
 
 }

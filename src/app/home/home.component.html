@@ -1,5 +1,6 @@
 ﻿<div class="card mt-4">
-    <h4 class="card-header">Home</h4>
+    <h4 class="card-header" *ngIf="currentUser.role == 'Student'  ">Student Details</h4>
+    <h4 class="card-header" *ngIf="currentUser.role == 'Teacher' ">Details for Teacher</h4>
     <div class="card-body">
         
         <p>Your role is: <strong>{{currentUser.role}}</strong>.</p>
