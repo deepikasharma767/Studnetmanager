@@ -61,7 +61,10 @@ import { ToastrModule } from 'ngx-toastr';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { StudentService } from './_services/student.Service';
 import { FilterPipe } from './_pipe/filter.pipe';
-import { PhonePipe } from './_pipe/phone.pipe';
+import { PhonePipe } from './_pipe/phone.pipe';;
+import { StudentAddComponent } from './student-add/student-add.component'
+;
+import { StudentComponent } from './student/student.component'
 @NgModule({
     imports: [
         BrowserModule,
@@ -129,7 +132,9 @@ import { PhonePipe } from './_pipe/phone.pipe';
         studentdetailsComponent ,
         FilterPipe,
         PhonePipe,
-        DetailsTeacherComponent   ],
+        DetailsTeacherComponent ,
+        StudentAddComponent ,
+        StudentComponent ],
         
     providers: [StudentService,
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

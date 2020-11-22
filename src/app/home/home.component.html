@@ -8,7 +8,7 @@
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
        
         <div>
-            <app-studentdetails *ngIf="currentUser.role == 'Student'  "></app-studentdetails>
+            <app-student *ngIf="currentUser.role == 'Student'  "></app-student>
             <app-details-teacher *ngIf="currentUser.role == 'Teacher' " ></app-details-teacher>
         </div>
     </div>

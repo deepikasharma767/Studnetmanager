@@ -5,6 +5,8 @@ import { AdminComponent } from './admin';
 import { LoginComponent } from './login';
 import { AuthGuard } from './_helpers';
 import { Role } from './_models';
+import { StudentAddComponent } from './student-add/student-add.component';
+import { studentdetailsComponent } from './studentdetails/studentdetails.component';
 
 const routes: Routes = [
     {
@@ -21,6 +23,18 @@ const routes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+        path: 'add',
+        component: StudentAddComponent
+    },
+    {
+        path: 'update/:id',
+        component: StudentAddComponent
+    },
+    {
+        path: 'detail/:id',
+        component: studentdetailsComponent
     },
 
     // otherwise redirect to home
