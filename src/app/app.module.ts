@@ -65,6 +65,7 @@ import { PhonePipe } from './_pipe/phone.pipe';;
 import { StudentAddComponent } from './student-add/student-add.component'
 ;
 import { StudentComponent } from './student/student.component'
+
 @NgModule({
     imports: [
         BrowserModule,

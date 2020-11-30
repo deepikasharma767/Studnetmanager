@@ -1,6 +1,8 @@
 <div class="w3-container" *ngIf="studentListData">
-	<div class="w3-panel w3-round-small w3-teal">
-		<h3>Student List <button routerLink="/add" ><i class=" fa fa-plus"></i> Add New Student</button></h3>
+	<div class="w3-panel w3-round-small w3-teal row ">
+		<div class="col-sm-9"><h3>Student List</h3></div>
+		<div class="col-sm-3 mt-1"><button mat-raised-button style="float: right;" routerLink="/add">Add New Student</button>
+			</div>
 	</div>
 	<span><i class="w3-medium fa fa-search"></i> Search : <input class="" type="text" [(ngModel)]='filterData'></span>
 
