@@ -1,12 +1,12 @@
 <div class="w3-container" *ngIf="studentListData">
 	<div class="w3-panel w3-round-small w3-teal row ">
 		<div class="col-sm-9"><h3>Student List</h3></div>
-		<div class="col-sm-3 mt-1"><button mat-raised-button style="float: right;" routerLink="/add">Add New Student</button>
+		<div class="col-sm-3 mt-2 mb-2"><button mat-raised-button style="float: right;" routerLink="/add">Add New Student</button>
 			</div>
 	</div>
 	<span><i class="w3-medium fa fa-search"></i> Search : <input class="" type="text" [(ngModel)]='filterData'></span>
 
-	<div class="w3-panel w3-green" *ngIf="(studentListData | filter:filterData).length == 0">
+	<div class="w3-panel w3-green col-sm-12" *ngIf="(studentListData | filter:filterData).length == 0">
 		<h3>Oh no</h3>
 		<p>No students found <span *ngIf="filterData"> with search "{{filterData}}"</span> </p>
 	</div>
