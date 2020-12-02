@@ -46,6 +46,15 @@ export class DetailsTeacherComponent implements OnInit {
  			
  			this.getStudentList();
  		}
- 	}
+	 }
+	 
+	 detailStudent(index:number){
+		// get confirm box for confirmation
+		
+			let studentDetail = this.studentService.getStudentDetails(index);
+			
+			this.success(studentDetail)
+		
+	}
 
 }
